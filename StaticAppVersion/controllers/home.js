@@ -1,11 +1,11 @@
 module.exports.start = (req,res) => {
-	res.status(200).json({messge:" It's Start-page!"})
+	res.render('start', { title: 'Start' })
 }
 
 module.exports.home = (req,res) => {
-	res.status(200).json({messge:" It's Home-page!"})
+	res.render('home', { title: 'Home' })
 }
 
 module.exports.test = (req,res) => {
-	res.status(200).json({messge:" It's Test-page!"})
+	res.render('test', { title: 'Test', message: " try hard"})
 }

@@ -1,0 +1,35 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='/styles/home.css')
+    style(type='text/css').
+    title #{title}
+  body
+    nav#navigation
+      ul
+        li
+          a(href='/')
+            span Return to Start
+        li
+          a(href='/About')
+            span About
+        li
+          a(href='/test')
+            span Test
+        li
+          a(href='https://zty.pe/')
+            span Game
+        li
+          a(href='https://github.com/Tumanish/MyServer')
+            span Project
+        li
+          a(href='/')
+            span Logout
+    #wrapper
+      span login: test@test.com
+    #wrapper
+      span passwrod : 123456
+    #wrapper
+      span

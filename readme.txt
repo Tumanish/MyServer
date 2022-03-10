@@ -1,3 +1,4 @@
+//TO DO ...
 Static Express App =>
 	Login =>
 		user detals
@@ -37,7 +38,8 @@ Angular One Page App =>
 
 ***
 npm
-	fs		//file system
-	path	//join.path
-	morgan	//write log's to a file
-	jade	//html template
+    "express": "^4.17.3"
+    "fs-extra": "^10.0.1"
+    "morgan": "^1.10.0"
+    "path": "^0.12.7"
+    "pug": "^3.0.2"
