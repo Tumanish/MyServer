@@ -1,1 +1,1 @@
-Hi this is  my server project ver: express aplication + Mongo
+Hi, this is  my server project => readme.txt
