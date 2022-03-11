@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    link(rel='stylesheet' href='/styles/home.css')
+    link(rel='stylesheet' href='/styles/sudoku.css')
+    style(type='text/css').
+    title #{title}
+  body
+    nav#navigation
+      ul
+        li
+          a(href='/home')
+            span return
+          a(href='/sudoku')
+            span Generate New
+          a()
+            span Analyse
+          a()
+            span Next Step
+          a()
+            span Solve
+    #wrapper
+      span Sudoku
+    #wrapper
+      span= message
+    //- script(src='/scripts/sudoku.js')
+    #wrapper
+      span Only 1 - 9 Numbers
+    - var n = 0
+    table#sudoku(cellspacing='0')
+      each v in data
+        - n++
+        if v
+          td= v
+          if n==9||n==18||n==27||n==36||n==45||n==54||n==63||n==72
+            tr
+        else 
+          <td class="digit"><input type="text" size="1" maxlength="1" onkeydown = "javascript: return ((event.keyCode>48)&&(event.keyCode<58))"></td>
+          if n==9||n==18||n==27||n==36||n==45||n==54||n==63||n==72
+            tr
+    table#sudoku(cellspacing='0')
+      - n = 0
+      each v in solve
+        - n++
+        if v
+          td= v
+          if n==9||n==18||n==27||n==36||n==45||n==54||n==63||n==72
+            tr
+        else 
+          <td class="digit"><input type="text" size="1" maxlength="1" onkeydown = "javascript: return ((event.keyCode>48)&&(event.keyCode<58))"></td>
+          if n==9||n==18||n==27||n==36||n==45||n==54||n==63||n==72
+            tr
