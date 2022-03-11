@@ -1,12 +1,16 @@
 {
   "name": "myserver",
-  "version": "1.0.0",
+  "version": "0.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index",
     "dev": "nodemon index"
+  },
+  "engines":{
+    "node": "16.13.1",
+    "npm":"8.1.2"
   },
   "repository": {
     "type": "git",
