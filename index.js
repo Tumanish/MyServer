@@ -1,5 +1,6 @@
 const app = require('./application')
 const http = require('http');
+var debug = require('debug')('myserver:server');
 
 // const port = process.env.PORT || 5000
 const port = normalizePort(process.env.PORT || '5000');

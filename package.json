@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/Tumanish/MyServer#readme",
   "dependencies": {
+    "debug": "^4.3.3",
     "express": "^4.17.3",
     "fs-extra": "^10.0.1",
     "http": "^0.0.1-security",
